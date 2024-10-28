@@ -29,7 +29,7 @@ const App: React.FC = () => {
   const handleSearch = async (city: string) => {
     try {
       const geoResponse = await axios.get(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=3&appid=${API_KEY}`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=3&appid=${API_KEY}`
       );
 
       // City not found
